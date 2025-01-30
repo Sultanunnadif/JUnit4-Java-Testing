@@ -22,7 +22,7 @@ public class ReqresApiPages {
     }
     public Response sendPOSTRequest(String requestBody){
         response = given()
-                .header("Content-Type","application/json") //dari postman check header
+                .header("Content-Type","application/json") //postman header
                 .body(requestBody)
                 .when()
                 .post()
